@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: black;
+  font-family: "Work Sans", sans-serif;
+}
+
+.header {
+  //   background: lightgray;
+  padding: 20px;
+  text-align: center;
+  background-image: url("../assets/background1.jpg");
+  background-size: cover;
+  background-position: bottom;
+
+  // position: relative;
+  height: 80vh;
+
+  &__logo {
+    position: absolute;
+    left: 1rem;
+    width: 200px;
+    animation: slide 2s ease;
+  }
+}
+
+.about {
+  height: 60vh;
+  text-align: center;
+}
+
+h1 {
+  color: white;
+}
+
+.nav {
+  position: fixed;
+  right: 1%;
+  top: 1%;
+  transition: 0.3s;
+  box-shadow: 0 0 10px black;
+
+  &__hidden-div {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 0px;
+    height: 0px;
+    background: rgba(white, 0.8);
+
+    z-index: 999;
+    transition: all 0.4s;
+    // box-shadow: 0 0 2px black;
+  }
+
+  &__button {
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px 7px;
+    background: white;
+    color: black;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    border-radius: 100px;
+    transition: 0.2s;
+    z-index: 1000;
+    // box-shadow: 0 5px 10px rgba(black, .3);
+
+    &:hover {
+      // background: darken($color: rgb(255, 255, 255), $amount: 20%);
+      cursor: pointer;
+    }
+
+    &:active {
+      // box-shadow: 0 0px 10px rgba(black, .3);
+    }
+  }
+
+  &__links {
+    opacity: 0;
+    width: 0;
+
+    a {
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      color: #000;
+      margin: 40px;
+      padding: 10px;
+    }
+  }
+
+  &__checkbox {
+    display: none;
+  }
+
+  &__checkbox:checked ~ &__hidden-div {
+    border-radius: 0px 0px 0px 100px;
+    width: 400px;
+    height: 400px;
+  }
+
+  &__checkbox:checked ~ &__hidden-div &__links {
+    opacity: 1;
+    width: 100%;
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  90% {
+    transform: translateY(-10%);
+    opacity: 100%;
+  }
+
+  100% {
+    transform: translate(0);
+  }
+}
