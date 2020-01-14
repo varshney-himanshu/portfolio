@@ -63,11 +63,13 @@ body {
 .Intro {
   background: black !important;
   // position: relative;
+  width: 100vw;
   z-index: 3;
   color: white;
 }
 
 .header {
+  width: 100%;
   padding: 20px;
   overflow: hidden;
   text-align: center;
