@@ -1,0 +1,70 @@
+.Navbar {
+  &__background {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    z-index: 100;
+    background-color: white;
+    transform: scale(0);
+    opacity: 0;
+
+    &--show {
+      transform: scale(50);
+      transition: all 0.5s;
+      opacity: 1;
+    }
+  }
+
+  &__toggler {
+    position: fixed;
+    right: 1rem;
+    top: 1rem;
+    z-index: 101;
+    outline: none;
+  }
+
+  &__links {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-350%, -50%);
+    opacity: 0;
+    z-index: 100;
+    justify-content: center;
+    text-align: center;
+    ol {
+      list-style: none;
+
+      li {
+        font-size: 380%;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #f0134d;
+        animation: bounceShow 1s ease-out;
+        cursor: pointer;
+      }
+    }
+
+    &--show {
+      transform: translate(-50%, -50%);
+      opacity: 1;
+      transition: all 0.4s;
+    }
+  }
+}
+
+@keyframes bounceShow {
+  0% {
+    transform: scale(0.9);
+  }
+
+  80% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
