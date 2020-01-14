@@ -33,7 +33,13 @@
     opacity: 0;
     z-index: 100;
     justify-content: center;
+    background-image: radial-gradient(circle farthest-corner at -0.4% 112%, rgba(102, 51, 204, 1) 0%, rgba(244, 111, 111, 1) 92.7%);
+    background-size: cover;
+    background-position: bottom;
+    -webkit-background-clip: text;
+    color: transparent;
     text-align: center;
+
     ol {
       list-style: none;
 
@@ -41,9 +47,16 @@
         font-size: 380%;
         text-transform: uppercase;
         font-weight: bold;
-        color: #f0134d;
+        color: transparent;
         animation: bounceShow 1s ease-out;
         cursor: pointer;
+
+        &:hover,
+        &:active {
+          color: black;
+          transition: .5s;
+        }
+
       }
     }
 
