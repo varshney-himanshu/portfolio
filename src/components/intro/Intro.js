@@ -43,6 +43,7 @@ export default function Intro() {
           reprehenderit dicta ea voluptates enim hic incidunt ab doloribus
           doloremque aut, rem ex sed laudantium iusto, illum nulla.
         </div>
+        <div className="col col-4"></div>
       </div>
     </div>
   );

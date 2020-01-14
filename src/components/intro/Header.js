@@ -54,8 +54,6 @@ class Header extends Component {
           <h1>Hi there! I'm Himanshu Varshney</h1>
           <h2>Web Developer/Designer</h2>
         </div>
-        <img className="header__clouds" src={clouds} alt="mountain-back" />
-
         <img
           className="header__mountain2"
           style={this.state.styleMountain}

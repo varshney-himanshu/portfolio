@@ -61,7 +61,7 @@ body {
 }
 
 .Intro {
-  background: black !important;
+  background-color: black;
   // position: relative;
   width: 100vw;
   z-index: 3;
@@ -73,12 +73,13 @@ body {
   padding: 20px;
   overflow: hidden;
   text-align: center;
-  background: white;
+  background: url("../assets/clouds.png");
+  background-attachment: fixed;
   background-size: cover;
   background-position: bottom;
   position: relative;
   height: 100vh;
-  border-bottom: 3px solid white;
+  border-bottom: 10px solid white;
 
   &__logo {
     position: absolute;
