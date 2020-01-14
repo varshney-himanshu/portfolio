@@ -51,8 +51,8 @@ class Header extends Component {
         <img class="header__mypic" alt="himanshu-varshney" src={img1}></img>
 
         <div style={this.state.styleIntroText} className="header__intro">
-          <h1>Hi there! I'm Himanshu Varshney</h1>
-          <h2>Web Developer/Designer</h2>
+          <h1 className="heading-primary">Hi there! I'm Himanshu Varshney</h1>
+          <h2 className="heading-secondary">Web Developer/Designer</h2>
         </div>
         <img
           className="header__mountain2"

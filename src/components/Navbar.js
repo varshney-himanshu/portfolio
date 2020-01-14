@@ -34,7 +34,7 @@ class Navbar extends Component {
           onClick={this.handleToggleClick}
         >
           <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
+            <span class="hamburger-inner makewhite"></span>
           </span>
         </button>
 
@@ -43,7 +43,9 @@ class Navbar extends Component {
             "Navbar__links--show"}`}
         >
           <ol>
-            <li onClick={this.handleToggleClick}>about me</li>
+            <li onClick={this.handleToggleClick}>
+              <a href="#about">about me</a>
+            </li>
             <li onClick={this.handleToggleClick}>my skills</li>
             <li onClick={this.handleToggleClick}>my work</li>
             <li onClick={this.handleToggleClick}>contact</li>

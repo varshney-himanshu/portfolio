@@ -1,0 +1,61 @@
+@keyframes slide {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    90% {
+        transform: translateY(-10%);
+        opacity: 100%;
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+@keyframes scaler1 {
+    0% {
+        transform: scale3d(1.5, 1.5, 1.5);
+    }
+
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes scaler2 {
+    0% {
+        transform: scale3d(1.2, 1.2, 1.2);
+    }
+
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+
+@keyframes moveUp {
+    0% {
+        transform: translate3d(0, 5rem, 0);
+    }
+
+    100% {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+@keyframes bounceShow {
+    0% {
+        transform: scale(0.9);
+    }
+
+    80% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

@@ -1,0 +1,71 @@
+.Intro {
+    background-color: $color-tertiary;
+    width: 100vw;
+    color: $color-primary;
+
+    .header {
+        width: 100%;
+        padding: 2rem;
+        overflow: hidden;
+        text-align: center;
+        background: url("../../assets/clouds.png");
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: bottom;
+        position: relative;
+        height: 100vh;
+        border-bottom: .2rem solid $color-primary;
+
+        &__logo {
+            position: absolute;
+            top: 4%;
+            left: 4%;
+            height: 10%;
+            z-index: 2;
+            transform: scale3d(1.3, 1.3, 1.3);
+            animation: scaler 1s ease-out;
+            animation-fill-mode: forwards;
+        }
+
+        &__mypic {
+            width: 30%;
+            position: absolute;
+            bottom: 0;
+            right: 2%;
+            animation: scaler1 1.8s ease-out;
+            animation-fill-mode: backwards;
+            background-attachment: fixed;
+            z-index: 10;
+        }
+
+        &__mountain2 {
+            width: 100%;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            z-index: 5;
+            animation: scaler2 1.7s ease-out;
+        }
+
+        &__clouds {
+            width: 100vw;
+            position: fixed;
+            opacity: 0.7;
+            left: 0;
+            top: 0;
+            height: 100%;
+        }
+
+        &__intro {
+            font-weight: bold;
+            position: absolute;
+            bottom: 10%;
+            left: 4%;
+            color: $color-primary;
+            z-index: 11;
+            text-align: left;
+            animation: moveUp 0.5s ease-out;
+        }
+    }
+
+}
