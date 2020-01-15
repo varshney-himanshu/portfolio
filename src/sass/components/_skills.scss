@@ -1,0 +1,43 @@
+.skills {
+    background-color: white !important;
+    position: relative;
+    padding: 5% 15%;
+
+    .heading-primary {
+        color: $color-tertiary;
+    }
+
+    &__cards {
+        margin-top: 5rem;
+
+        &__card {
+            text-align: center;
+
+            color: $color-tertiary;
+
+            &__icon {
+                width: 13rem;
+                margin-bottom: 1.5rem;
+                opacity: 0;
+            }
+
+            &__heading {
+                color: $color-secondary;
+                font-size: 4rem;
+                text-transform: uppercase;
+                font-weight: bold;
+                letter-spacing: 2px;
+
+            }
+
+            &__text {
+                font-size: 2rem;
+                // opacity: 0;
+            }
+        }
+    }
+}
+
+.card__body {
+    opacity: 0;
+}

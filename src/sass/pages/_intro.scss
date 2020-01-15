@@ -1,5 +1,5 @@
 .Intro {
-    background-color: $color-tertiary;
+    // background-color: $color-tertiary;
     width: 100vw;
     color: $color-primary;
 
@@ -45,15 +45,6 @@
             bottom: 0;
             z-index: 5;
             animation: scaler2 1.7s ease-out;
-        }
-
-        &__clouds {
-            width: 100vw;
-            position: fixed;
-            opacity: 0.7;
-            left: 0;
-            top: 0;
-            height: 100%;
         }
 
         &__intro {

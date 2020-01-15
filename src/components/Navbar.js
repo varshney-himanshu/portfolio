@@ -46,7 +46,9 @@ class Navbar extends Component {
             <li onClick={this.handleToggleClick}>
               <a href="#about">about me</a>
             </li>
-            <li onClick={this.handleToggleClick}>my skills</li>
+            <li onClick={this.handleToggleClick}>
+              <a href="#skills">my skills</a>
+            </li>
             <li onClick={this.handleToggleClick}>my work</li>
             <li onClick={this.handleToggleClick}>contact</li>
           </ol>

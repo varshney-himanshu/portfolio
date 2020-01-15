@@ -1,3 +1,39 @@
+.flip {
+    perspective: 2000px;
+    opacity: 0;
+    animation: flip .3s ease-out;
+    animation-delay: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+.move-up {
+    animation: moveUp 1s ease-out;
+    animation-fill-mode: forwards;
+}
+
+.move-up-delay {
+    animation: moveUp 1s ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+
+.flip-d-15 {
+    opacity: 0;
+    animation: flip .3s ease-out;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+.flip-d-1 {
+    opacity: 0;
+    animation: flip .3s ease-out;
+    animation-delay: .8s;
+    animation-fill-mode: forwards;
+}
+
+
+
+
 @keyframes slide {
     0% {
         transform: translateY(100%);
@@ -58,4 +94,65 @@
     100% {
         transform: scale(1);
     }
+}
+
+@keyframes flip {
+    0% {
+        transform: rotateX(180deg);
+
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+@keyframes moveRightLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    50% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+.drop {
+    animation: dropDown 1s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.drop-delay-5 {
+    animation: dropDown 1s ease-in-out;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;
+
+}
+
+.drop-delay-10 {
+    animation: dropDown 1s ease-in-out;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes dropDown {
+    0% {
+        transform: translateY(-700%);
+    }
+
+    90% {
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
 }

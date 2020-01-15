@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import mountain from "../../assets/mountain2.png";
 import logo from "../../assets/signature-black.png";
 import img1 from "../../assets/ps.png";
-import clouds from "../../assets/clouds.png";
 
 class Header extends Component {
   constructor(props) {
