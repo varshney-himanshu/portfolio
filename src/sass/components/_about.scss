@@ -1,13 +1,15 @@
 .about {
-    padding: 10% 10% 15%;
+    padding: 10%;
     font-size: 1.8rem;
     background-color: $color-tertiary;
     position: relative;
-    border-bottom: 2px solid $color-primary;
+    // border-bottom: 2px solid $color-primary;
     z-index: 40;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
-    margin-bottom: -5%;
-    box-shadow: 0 0 20px black;
+    // box-shadow: 0 0 20px black;
+
+    .heading-primary {
+        text-transform: uppercase;
+    }
 
     p {
         color: $color-secondary;

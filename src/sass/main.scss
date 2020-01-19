@@ -19,16 +19,3 @@
 @import "./Navbar";
 @import "./components/about";
 @import "./components/skills";
-
-
-.makewhite {
-    background-color: white;
-
-    &::after {
-        background-color: white;
-    }
-
-    &::before {
-        background-color: white;
-    }
-}
