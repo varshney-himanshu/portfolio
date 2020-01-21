@@ -45,7 +45,46 @@
 }
 
 
+.come-from-right {
+    animation: 1s comeFromRight ease-out;
+    animation-fill-mode: forwards;
+}
 
+
+.come-from-left {
+    animation: 1s comeFromLeft ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: .5s;
+}
+
+.come-from-right-delay {
+
+    animation: 1s comeFromRight ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: .3s;
+}
+
+@keyframes comeFromRight {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes comeFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
 
 @keyframes slide {
     0% {

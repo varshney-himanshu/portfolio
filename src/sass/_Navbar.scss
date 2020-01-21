@@ -53,7 +53,7 @@
 
         &:hover,
         &:active {
-          background: darken(pink, 40%);
+          background: $color-secondary;
           padding: 10px;
           color: #fff;
           transition: 0.5s;
