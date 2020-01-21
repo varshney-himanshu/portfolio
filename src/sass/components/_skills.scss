@@ -1,18 +1,23 @@
 .skills {
     // box-sizing: content-box;
-    background-color: $color-primary !important;
+    background-color: $color-primary;
     position: relative;
     width: 85vw;
     margin: auto;
     text-align: center;
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 10px 10px 0px 0px;
     z-index: 41;
     box-shadow: 0 0 20px black;
     padding-bottom: 6rem;
 
     .heading-primary {
-        color: $color-tertiary;
+        color: $color-secondary;
         text-transform: uppercase;
+
+    }
+
+    .hr {
+        border-bottom: 1px solid $color-secondary;
     }
 
     &__header {
@@ -104,4 +109,38 @@
 
 .card__body {
     opacity: 0;
+}
+
+@media only screen and (max-width: 500px) {
+    .skills {
+        width: 100vw;
+        border-radius: 15px 15px 0px 0px;
+        padding-top: 2rem;
+
+        &__cards {
+            &__card {
+                margin-bottom: 5rem;
+
+                &__icon {
+                    width: 45%;
+                }
+
+                &__heading {
+                    font-size: 2rem;
+                }
+
+                &__text {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+
+        &__main {
+            &__frontend {
+                border-right: none;
+                margin-bottom: 5rem;
+            }
+        }
+
+    }
 }

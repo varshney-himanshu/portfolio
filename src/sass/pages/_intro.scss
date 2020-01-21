@@ -59,3 +59,28 @@
     }
 
 }
+
+@media only screen and (max-width: 500px) {
+    .Intro {
+        .header {
+            &__logo {
+                height: 7%;
+                left: 2rem;
+            }
+
+            &__mypic {
+                width: 80%;
+                right: -8rem;
+            }
+
+            &__mountain2 {
+                width: 350%;
+            }
+
+            &__intro {
+                bottom: 2%;
+            }
+        }
+    }
+
+}

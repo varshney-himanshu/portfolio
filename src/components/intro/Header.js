@@ -45,9 +45,9 @@ class Header extends Component {
   }
   render() {
     return (
-      <div id="header" class="header">
-        <img class="header__logo" src={logo} alt="logo-dark" />
-        <img class="header__mypic" alt="himanshu-varshney" src={img1}></img>
+      <div id="header" className="header">
+        <img className="header__logo" src={logo} alt="logo-dark" />
+        <img className="header__mypic" alt="himanshu-varshney" src={img1}></img>
 
         <div style={this.state.styleIntroText} className="header__intro">
           <h1 className="heading-primary">Hi there! I'm Himanshu Varshney</h1>

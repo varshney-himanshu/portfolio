@@ -12,7 +12,7 @@ class About extends Component {
       const distanceFromTop = window.pageYOffset;
       const heading = document.querySelector(".about__info");
       const elementDistance = heading.offsetTop;
-      console.log(elementDistance, distanceFromTop);
+      // console.log(elementDistance, distanceFromTop);
       if (elementDistance < distanceFromTop) {
         if (!this.state.elementOnViewport) {
           this.setState({ elementOnViewport: true });
@@ -34,6 +34,7 @@ class About extends Component {
           >
             About Me
           </h1>
+          <hr className="hr" />
           <p className={` ${this.state.elementOnViewport && "flip-d-1"}`}>
             I am a full-stack Web Developer and Graphic Designer, currently
             living in New Delhi, India. I have a Bachelor of Computer

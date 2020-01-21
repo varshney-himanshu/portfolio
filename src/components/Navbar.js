@@ -33,8 +33,8 @@ class Navbar extends Component {
           aria-controls="navigation"
           onClick={this.handleToggleClick}
         >
-          <span class="hamburger-box">
-            <span class="hamburger-inner makewhite"></span>
+          <span className="hamburger-box">
+            <span className="hamburger-inner makewhite"></span>
           </span>
         </button>
 
@@ -52,7 +52,9 @@ class Navbar extends Component {
             <li onClick={this.handleToggleClick}>
               <a href="#mywork">my work</a>
             </li>
-            <li onClick={this.handleToggleClick}>contact</li>
+            <li onClick={this.handleToggleClick}>
+              <a href="#contact">Contact me</a>
+            </li>
           </ol>
         </div>
       </div>

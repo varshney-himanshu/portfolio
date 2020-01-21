@@ -101,3 +101,17 @@
     background-color: $color-primary;
   }
 }
+
+
+@media only screen and (max-width: 500px) {
+  .Navbar {
+    &__links {
+      ol {
+        li {
+          font-size: 2.6rem;
+          margin-bottom: .5rem;
+        }
+      }
+    }
+  }
+}

@@ -31,8 +31,6 @@ class MyWork extends Component {
         document.querySelector("#msi-events").getBoundingClientRect().top -
         500;
 
-      console.log(distProject1, distProject2, distProject3, distanceFromTop);
-
       if (distProject1 < distanceFromTop) {
         if (!this.state.elementOnViewport) {
           this.setState({ project1OnScreen: true });
@@ -57,6 +55,7 @@ class MyWork extends Component {
     return (
       <div className="mywork" id="mywork">
         <h1 className="heading-primary">MY WORK</h1>
+        <hr className="hr" />
 
         <div id="kyratax" className="row mywork__project">
           <div

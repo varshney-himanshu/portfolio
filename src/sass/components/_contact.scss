@@ -1,0 +1,129 @@
+.contact {
+  width: 85vw;
+  background-color: $color-primary;
+  margin: auto;
+  padding: 8rem 3rem 1rem;
+  text-align: center;
+
+  #message-id {
+    font-size: 1.4rem;
+    color: $color-primary;
+  }
+
+  .heading-primary {
+    color: $color-tertiary;
+    text-transform: uppercase;
+  }
+
+  .hr {
+    border-bottom: 1px solid $color-tertiary;
+  }
+
+  &__text {
+    color: $color-tertiary;
+    font-size: 1.8rem;
+    padding: 0 25%;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+    font-weight: bold;
+  }
+
+  &__form {
+    width: 50%;
+    margin: auto;
+
+    &__input {
+      background-color: darken($color-primary, 20%);
+      border: none;
+      padding: 1rem;
+      color: darken(gray, 20%);
+      outline: none;
+      width: 100%;
+      border-radius: 4px;
+      box-shadow: inset 0 0 10px rgba(black, 0.15s);
+      margin-bottom: 2rem;
+      //   border: 2px solid darken($color-primary, 50%);
+
+      &--textarea {
+        resize: none;
+        height: 10rem;
+      }
+
+      &::-webkit-input-placeholder {
+        /* Edge */
+        color: gray;
+      }
+
+      &:-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: gray;
+      }
+
+      &::placeholder {
+        color: darken(gray, 20%);
+      }
+    }
+
+    &__submit {
+      //   border: 2px solid darken($color-primary, 50%);
+      border: none;
+      background-color: darken($color-primary, 15%);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      outline: none;
+      font-weight: bold;
+      color: darken($color-primary, 60%);
+      padding: 1rem 5rem;
+      border-radius: 0.2rem;
+      box-shadow: 2px 8px 7px rgba(black, 0.4);
+      transition: 0.2s;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &:active {
+        box-shadow: 2px 4px 7px rgba(black, 0.4);
+      }
+    }
+  }
+
+  &__footer {
+    margin-top: 10rem;
+
+    &__links {
+      margin: 0 15px;
+
+      img {
+        width: 3rem;
+
+        &:hover {
+          transform: scale(1.2);
+          transition: 0.3s;
+        }
+
+        &:hover &:not(:hover) {
+          transform: scale(0.9);
+          transition: 0.3s;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+
+  .contact {
+    width: 100vw;
+    padding-top: 30%;
+
+    &__text {
+      font-size: 1.4rem;
+      padding: 0 2%;
+    }
+
+    &__form {
+      width: 100%;
+    }
+  }
+}

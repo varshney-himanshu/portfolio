@@ -43,8 +43,7 @@ export default class Skills extends Component {
     return (
       <div id="skills" className="skills">
         <div className="skills__header">
-          <h1 className="heading-primary">My Skills</h1>
-
+          <h1 className="heading-primary">My Skills</h1> <hr className="hr" />
           <div className="row skills__cards">
             <div className="col col-12 col-lg-4 skills__cards__card">
               <img

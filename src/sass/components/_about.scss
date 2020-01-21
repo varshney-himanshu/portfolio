@@ -3,14 +3,21 @@
     font-size: 1.8rem;
     background-color: $color-tertiary;
     position: relative;
-    // border-bottom: 2px solid $color-primary;
     z-index: 40;
     // box-shadow: 0 0 20px black;
     text-align: justify;
 
     .heading-primary {
         text-transform: uppercase;
-        color: darken($color-primary, 20%);
+        // color: darken($color-primary, 20%);
+        color: $color-secondary;
+    }
+
+    .hr {
+        margin: initial;
+        margin-bottom: 1.5%;
+        width: 100%;
+        border-bottom: 1px solid $color-secondary;
     }
 
     p {
@@ -22,4 +29,10 @@
         padding: 5%
     }
 
+}
+
+@media only screen and (max-width: 500px) {
+    .about {
+        font-size: 1.4rem;
+    }
 }

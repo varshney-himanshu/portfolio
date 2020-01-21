@@ -24,3 +24,10 @@ body {
 .row {
     width: 100%;
 }
+
+.hr {
+    border-bottom: 1px solid $color-primary;
+    border-top: none;
+    width: 15rem;
+    margin: auto;
+}
