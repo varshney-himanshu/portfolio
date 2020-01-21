@@ -6,13 +6,16 @@
     // border-bottom: 2px solid $color-primary;
     z-index: 40;
     // box-shadow: 0 0 20px black;
+    text-align: justify;
 
     .heading-primary {
         text-transform: uppercase;
+        color: darken($color-primary, 20%);
     }
 
     p {
-        color: $color-secondary;
+        color: $color-primary;
+        font-weight: 200;
     }
 
     &__info {

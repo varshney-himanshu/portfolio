@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./Header";
 import About from "./About";
 import Skills from "./Skills";
+import MyWork from "./MyWork";
 
 export default function Intro() {
   return (
@@ -9,6 +10,7 @@ export default function Intro() {
       <Header />
       <About />
       <Skills />
+      <MyWork />
     </div>
   );
 }
