@@ -1,2 +1,3 @@
+Sitemap: https:/himanshuvarshney.now.sh/sitemap.xml
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
