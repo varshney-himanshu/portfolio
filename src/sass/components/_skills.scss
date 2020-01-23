@@ -7,17 +7,17 @@
     text-align: center;
     border-radius: 10px 10px 0px 0px;
     z-index: 41;
-    box-shadow: 0 0 20px black;
+    // box-shadow: 0 0 20px black;
     padding-bottom: 6rem;
 
     .heading-primary {
-        color: $color-secondary;
+        color: $color-tertiary;
         text-transform: uppercase;
 
     }
 
     .hr {
-        border-bottom: 1px solid $color-secondary;
+        border-bottom: 1px solid $color-tertiary;
     }
 
     &__header {
@@ -114,7 +114,7 @@
 @media only screen and (max-width: 500px) {
     .skills {
         width: 100vw;
-        border-radius: 15px 15px 0px 0px;
+        border-radius: 0px;
         padding-top: 2rem;
 
         &__cards {

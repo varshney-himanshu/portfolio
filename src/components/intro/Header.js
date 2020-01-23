@@ -22,8 +22,8 @@ class Header extends Component {
   componentDidMount() {
     window.addEventListener("scroll", () => {
       var topDistance = window.pageYOffset;
-      var translate3dIntro = "translateY(" + -(topDistance * 0.5) + "px)";
-      var translate3dMountain = "translateY(" + topDistance * 0.7 + "px)";
+      var translate3dIntro = "translateY(" + topDistance * 0.1 + "px)";
+      var translate3dMountain = "translateY(" + topDistance * 0.3 + "px)";
       var translateCloud = "translateY(" + topDistance * 1.3 + "px)";
       this.setState(state => {
         return {
@@ -47,7 +47,12 @@ class Header extends Component {
     return (
       <div id="header" className="header">
         <img className="header__logo" src={logo} alt="logo-dark" />
-        <img className="header__mypic" alt="himanshu-varshney" src={img1}></img>
+        <img
+          className="header__mypic"
+          alt="himanshu-varshney"
+          src={img1}
+          style={this.state.styleIntroText}
+        ></img>
 
         <div style={this.state.styleIntroText} className="header__intro">
           <h1 className="heading-primary">Hi there! I'm Himanshu Varshney</h1>

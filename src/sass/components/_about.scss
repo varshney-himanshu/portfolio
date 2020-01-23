@@ -1,7 +1,6 @@
 .about {
     padding: 10%;
     font-size: 1.8rem;
-    background-color: $color-tertiary;
     position: relative;
     z-index: 40;
     // box-shadow: 0 0 20px black;
@@ -10,14 +9,14 @@
     .heading-primary {
         text-transform: uppercase;
         // color: darken($color-primary, 20%);
-        color: $color-secondary;
+        color: $color-primary;
     }
 
     .hr {
         margin: initial;
         margin-bottom: 1.5%;
         width: 100%;
-        border-bottom: 1px solid $color-secondary;
+        border-bottom: 1px solid $color-primary;
     }
 
     p {
