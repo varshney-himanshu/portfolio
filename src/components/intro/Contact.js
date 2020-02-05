@@ -101,7 +101,7 @@ class Contact extends Component {
           }}
           action={[
             <IconButton onClick={this.onCloseSnackBar}>
-              <Close />
+              <Close style={{ color: "white" }} />
             </IconButton>
           ]}
         />
