@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import { Snackbar } from "@material-ui/core";
+import axios from "axios";
+
 import IconButton from "@material-ui/core/IconButton";
 import Close from "@material-ui/icons/Close";
-
 import iconMail from "../../assets/social/envelope-square-solid.svg";
 import iconGithub from "../../assets/social/github-square-brands.svg";
 import iconFacebook from "../../assets/social/facebook-square-brands.svg";
@@ -14,17 +15,25 @@ class Contact extends Component {
     this.state = {
       name: "",
       email: "",
-      message: "",
+      msg: "",
       showSnackBar: false
     };
   }
 
-  onFormSubmit = e => {
+  onFormSubmit = async e => {
     e.preventDefault();
     // console.log(this.state);
+    const { email, msg, name } = this.state;
 
-    //todo: add mail data logic
-    this.setState({ showSnackBar: true });
+    const response = await axios.post("https://api-mailer.now.sh", {
+      email,
+      msg,
+      name
+    });
+
+    if (response.data.success) {
+      this.setState({ showSnackBar: true, email: "", msg: "", name: "" });
+    }
   };
 
   onInputChange = e => {
@@ -54,6 +63,7 @@ class Contact extends Component {
             className="contact__form__input"
             placeholder="Your name here."
             value={this.state.name}
+            required
           />
           <input
             name="email"
@@ -62,14 +72,16 @@ class Contact extends Component {
             className="contact__form__input"
             placeholder="Your email here."
             value={this.state.email}
+            required
           />
           <textarea
-            name="message"
+            name="msg"
             onChange={this.onInputChange}
             type="text"
             className="contact__form__input contact__form__input--textarea"
             placeholder="A message for me"
-            value={this.state.message}
+            value={this.state.msg}
+            required
           />
           <button className="contact__form__submit"> Send </button>
         </form>
@@ -79,7 +91,10 @@ class Contact extends Component {
           autoHideDuration={3000}
           anchorOrigin={{ vertical: "bottom", horizontal: "left" }}
           message={
-            <span id="message-id">Thankyou! I will contact you shortly!</span>
+            <span id="message-id">
+              Thankyou! your response has been recorded. I will contact you
+              shortly.
+            </span>
           }
           ContentProps={{
             "aria-describedby": "message-id"
