@@ -1,0 +1,44 @@
+I am a Full-Stack/ React.js/ Node.js Web Developer. I'm currently living in New Delhi, India. 
+
+PORTFOLIO: https://himanshuvarshney.works/ 
+
+WORKING WITH ME, YOU'LL GET:    
+
+ # VALUE TO YOUR WORK
+    You'll find many people out there who can create websites and apps, but, what I do differently? I don't just only create websites I also focus on providing value to your work
+
+ # EFFICIENT AND STRUCTURED CODE
+    Good websites and web apps are lag-free, has fast load-time and are scalable. I try to make my code structured and as efficient as possible so it can be performant in real world.
+
+ # ATTENTION TO DETAILS
+    My goad is to provide you perfection, Keeping that in mind, I give 100% of my attention to every single little detail.
+
+
+MY TECHNICAL SKILLS: 
+
+ # FRONT-END
+    - HTML
+    - CSS
+    - SASS
+    - JavaScript
+    - BootStrap
+    - React.js
+
+ # BACK-END
+    - Node.js
+    - MongoDB
+    - Socket.io
+
+ # OTHER SKILLS
+    - shopify
+    - GIT
+    - Postman 
+    - Adobe Photoshop
+    - Adobe Premiere
+    - C/C++
+
+MY PERSONAL SKILLS: 
+ - Web Development
+ - Detail-oriented 
+ - Problem Solving
+ - Self-Motivation

@@ -14,19 +14,19 @@
 .move-up-delay {
     animation: moveUp 1s ease-out;
     animation-fill-mode: forwards;
-    animation-delay: 2s;
+    animation-delay: .7s;
 }
 
 .move-up-delay-25 {
     animation: moveUp 1s ease-out;
     animation-fill-mode: forwards;
-    animation-delay: 2.5s;
+    animation-delay: 1s;
 }
 
 .move-up-delay-30 {
     animation: moveUp 1s ease-out;
     animation-fill-mode: forwards;
-    animation-delay: 3s;
+    animation-delay: 1.3s;
 }
 
 
@@ -176,36 +176,39 @@
 
 
 .drop {
-    animation: dropDown 1s ease-in-out;
+    animation: dropDown .5s ease-out;
     animation-fill-mode: backwards;
 }
 
 .drop-delay-5 {
-    animation: dropDown 1s ease-in-out;
-    animation-delay: .5s;
+    animation: dropDown .5s ease-out;
+    animation-delay: .2s;
     animation-fill-mode: backwards;
 
 }
 
 .drop-delay-10 {
-    animation: dropDown 1s ease-in-out;
-    animation-delay: 1s;
+    animation: dropDown .5s ease-out;
+    animation-delay: .5s;
     animation-fill-mode: backwards;
 }
 
 @keyframes dropDown {
     0% {
-        transform: translateY(-700%);
-        opacity: 0;
+        // transform: translateY(-700%);
+        // opacity: 0;
+        transform: scale(0);
     }
 
-    90% {
-        transform: translateY(20px);
+    80% {
+        // transform: translateY(20px);
+        transform: scale(1.2);
     }
 
     100% {
-        opacity: 1;
-        transform: translateY(0);
+        // opacity: 1;
+        // transform: translateY(0);
+        transform: scale(1);
     }
 
 }

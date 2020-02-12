@@ -11,7 +11,8 @@ class About extends Component {
     window.addEventListener("scroll", () => {
       const distanceFromTop = window.pageYOffset;
       const heading = document.querySelector(".about__info");
-      const elementDistance = heading.offsetTop;
+      const elementDistance =
+        window.pageYOffset + heading.getBoundingClientRect().top - 2000;
       // console.log(elementDistance, distanceFromTop);
       if (elementDistance < distanceFromTop) {
         if (!this.state.elementOnViewport) {

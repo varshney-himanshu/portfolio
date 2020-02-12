@@ -29,7 +29,8 @@ export default class Skills extends Component {
     window.addEventListener("scroll", () => {
       const distanceFromTop = window.pageYOffset;
       const heading = document.querySelector(".skills");
-      const elementDistance = heading.offsetTop - 500;
+      const elementDistance =
+        window.pageYOffset + heading.getBoundingClientRect().top - 500;
 
       if (elementDistance < distanceFromTop) {
         if (!this.state.elementOnViewport) {
